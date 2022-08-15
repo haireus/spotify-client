@@ -1,11 +1,11 @@
 // material icon
-import AddIcon from '@material-ui/icons/Add';
-import ShopIcon from '@material-ui/icons/Shop';
-import ViewListIcon from '@material-ui/icons/ViewList';
-import PeopleIcon from '@material-ui/icons/People';
-import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import AssessmentIcon from '@material-ui/icons/Assessment';
+import AddIcon from '@mui/icons-material/Add';
+import ShopIcon from '@mui/icons-material/Shop';
+import ViewListIcon from '@mui/icons-material/ViewList';
+import PeopleIcon from '@mui/icons-material/People';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import AssessmentIcon from '@mui/icons-material/Assessment';
 
 // configs
 import { PATH_NAME, DRAWER_MENU_LABEL } from 'configs';

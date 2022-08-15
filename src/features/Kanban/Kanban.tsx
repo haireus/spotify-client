@@ -10,7 +10,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActions from '@mui/material/CardActions';
-import AddIcon from '@material-ui/icons/Add';
+import AddIcon from '@mui/icons-material/Add';
 
 import TaskViewModal from './components/TaskViewModal';
 import TaskEditModal from './components/TaskAddEditModal';
@@ -65,7 +65,7 @@ function Kanban() {
         <Grid item sm={8}>
           <h2>Kanban Board</h2>
         </Grid>
-        <Grid container item sm={4} justify="flex-end">
+        <Grid container item sm={4} justifyContent="flex-end">
           <Button variant="contained" color="primary" size="small" startIcon={<AddIcon />} onClick={() => setIsOpenAddTask(true)}>
             Add Task
           </Button>
@@ -93,7 +93,7 @@ function Kanban() {
                           <Button size="small" color="primary" onClick={() => setIsOpen(true)}>
                             View
                           </Button>
-                          <Grid container justify="flex-end">
+                          <Grid container justifyContent="flex-end">
                             <Typography variant="body2" color="textSecondary" component="p">
                               {row.author}
                             </Typography>
@@ -124,7 +124,7 @@ function Kanban() {
                         <Button size="small" color="primary" onClick={() => setIsOpen(true)}>
                           View
                         </Button>
-                        <Grid container justify="flex-end">
+                        <Grid container justifyContent="flex-end">
                           <Typography variant="body2" color="textSecondary" component="p">
                             Tony Nguyen
                           </Typography>
@@ -154,7 +154,7 @@ function Kanban() {
                         <Button size="small" color="primary" onClick={() => setIsOpen(true)}>
                           View
                         </Button>
-                        <Grid container justify="flex-end">
+                        <Grid container justifyContent="flex-end">
                           <Typography variant="body2" color="textSecondary" component="p">
                             Tony Nguyen
                           </Typography>
@@ -175,7 +175,7 @@ function Kanban() {
                         <Button size="small" color="primary" onClick={() => setIsOpen(true)}>
                           View
                         </Button>
-                        <Grid container justify="flex-end">
+                        <Grid container justifyContent="flex-end">
                           <Typography variant="body2" color="textSecondary" component="p">
                             Tony Nguyen
                           </Typography>

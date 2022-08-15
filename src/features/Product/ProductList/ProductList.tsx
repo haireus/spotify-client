@@ -11,7 +11,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-import AddIcon from '@material-ui/icons/Add';
+import AddIcon from '@mui/icons-material/Add';
 
 // atomic
 import PaginationBase from 'components/molecules/PaginationBase';
@@ -44,7 +44,7 @@ function ProductList() {
   return (
     <div>
       {canAction('create', 'product') ? (
-        <Grid container justify="flex-end">
+        <Grid container justifyContent="flex-end">
           <Button
             type="submit"
             variant="contained"

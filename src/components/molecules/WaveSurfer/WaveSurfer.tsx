@@ -5,8 +5,8 @@ import WaveSurfer from 'wavesurfer.js';
 import Grid from '@mui/material/Grid';
 
 // material icon
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import PauseIcon from '@material-ui/icons/Pause';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PauseIcon from '@mui/icons-material/Pause';
 
 // helpers
 import { secondToTime } from 'helpers';

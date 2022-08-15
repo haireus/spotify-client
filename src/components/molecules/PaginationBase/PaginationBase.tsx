@@ -7,8 +7,8 @@ import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 
 // material icons
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // styles
 import useStyles from './styles';

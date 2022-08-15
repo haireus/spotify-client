@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { Box, Button, Container, Typography, useTheme, useMediaQuery, makeStyles } from '@mui/material';
+import { Box, Button, Container, Typography, useTheme, useMediaQuery } from '@mui/material';
+import { Theme } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   root: {
     backgroundColor: theme.palette.background.default,
     minHeight: '100vh',

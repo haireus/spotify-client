@@ -7,8 +7,8 @@ import Collapse from '@mui/material/Collapse';
 import ListItem from '@mui/material/ListItem';
 
 // material icon
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 // types
 import { INavBarExpandItem } from 'models/INavBar';

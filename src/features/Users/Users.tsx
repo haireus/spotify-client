@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 import Grid from '@mui/material/Grid';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -10,8 +10,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import IconButton from '@mui/material/IconButton';
-import EditIcon from '@material-ui/icons/Edit';
-import AddIcon from '@material-ui/icons/Add';
+import EditIcon from '@mui/icons-material/Edit';
+import AddIcon from '@mui/icons-material/Add';
 import Button from '@mui/material/Button';
 
 const useStyles = makeStyles({
@@ -39,7 +39,7 @@ export default function UserList() {
         <Grid sm={8}>
           <h2>User</h2>
         </Grid>
-        <Grid sm={4} container justify="flex-end">
+        <Grid sm={4} container justifyContent="flex-end">
           <Button
             variant="contained"
             color="primary"

@@ -8,15 +8,16 @@ import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
+import { Theme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 // material icon
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 
 // configs
 import { USER_ROLE } from 'configs';
@@ -24,7 +25,7 @@ import { USER_ROLE } from 'configs';
 // actions
 import { login } from 'actions/auth.action';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
@@ -87,7 +88,7 @@ export default function SignIn() {
             <Select
               fullWidth
               value={role}
-              onChange={(e: React.ChangeEvent<{ value: unknown }>) => setRole(e.target.value as string)}
+              onChange={(e: SelectChangeEvent<unknown>) => setRole(e.target.value as string)}
               label="Role"
             >
               <MenuItem value={USER_ROLE.ADMIN}>Admin</MenuItem>

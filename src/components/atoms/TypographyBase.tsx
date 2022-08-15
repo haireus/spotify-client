@@ -2,7 +2,8 @@ import React, { FC } from 'react';
 import clsx from 'clsx';
 
 // material core
-import { makeStyles, Theme } from '@mui/material/styles';
+import { Theme } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 
 type IStyles = {
   fontSize?: string;

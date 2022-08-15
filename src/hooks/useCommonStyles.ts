@@ -1,6 +1,7 @@
-import { makeStyles } from '@mui/material/styles';
+import { Theme } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 
-const useCommonStyles = makeStyles((theme) => ({
+const useCommonStyles = makeStyles((theme: Theme) => ({
   colorTextCompleted: {
     color: theme.palette.success.main,
   },

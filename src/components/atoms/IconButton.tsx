@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import clsx from 'clsx';
 
-import { makeStyles, Theme } from '@mui/material/styles';
+import { Theme } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 
 // material core
 import IconButton from '@mui/material/IconButton';
@@ -9,7 +10,7 @@ import Tooltip, { TooltipProps } from '@mui/material/Tooltip';
 
 const useStyles = makeStyles((theme: Theme) => ({
   borderColor: {
-    border: `1px solid ${theme.palette.type === 'light' ? 'rgba(0, 0, 0, 0.12)' : 'rgba(206, 203, 203, 0.12)'}`,
+    border: `1px solid ${theme.palette.mode === 'light' ? 'rgba(0, 0, 0, 0.12)' : 'rgba(206, 203, 203, 0.12)'}`,
   },
 }));
 

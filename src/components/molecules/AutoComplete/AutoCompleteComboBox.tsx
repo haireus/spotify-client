@@ -3,7 +3,7 @@ import { VariableSizeList as List, ListChildComponentProps } from 'react-window'
 
 // material core
 import TextField from '@mui/material/TextField';
-import Autocomplete, { AutocompleteRenderOptionState } from '@material-ui/lab/Autocomplete';
+import Autocomplete, { AutocompleteRenderOptionState } from '@mui/material/Autocomplete';
 import ListSubheader from '@mui/material/ListSubheader';
 
 const LISTBOX_PADDING = 8; // px
@@ -104,28 +104,29 @@ const AutoCompleteComboBox = <T extends object>({
   getOptionSelected,
 }: IAutoComponentComboxBoxProps<T>) => {
   return (
-    <Autocomplete
-      id={id}
-      options={data}
-      value={value}
-      getOptionLabel={getOptionLabel}
-      renderOption={renderOption}
-      getOptionSelected={getOptionSelected}
-      ListboxComponent={ListboxComponent as React.ComponentType<React.HTMLAttributes<HTMLElement>>}
-      renderInput={(params) => (
-        <TextField
-          {...params}
-          error={error}
-          label={label}
-          variant="outlined"
-          placeholder={placeholder}
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-      )}
-      onChange={(_: React.ChangeEvent<{}>, value: T | null) => onChangeValue && onChangeValue(value)}
-    />
+    // <Autocomplete
+    //   id={id}
+    //   options={data}
+    //   value={value}
+    //   getOptionLabel={getOptionLabel}
+    //   renderOption={renderOption}
+    //   getOptionSelected={getOptionSelected}
+    //   ListboxComponent={ListboxComponent as React.ComponentType<React.HTMLAttributes<HTMLElement>>}
+    //   renderInput={(params) => (
+    //     <TextField
+    //       {...params}
+    //       error={error}
+    //       label={label}
+    //       variant="outlined"
+    //       placeholder={placeholder}
+    //       InputLabelProps={{
+    //         shrink: true,
+    //       }}
+    //     />
+    //   )}
+    //   onChange={(_: React.ChangeEvent<{}>, value: T | null) => onChangeValue && onChangeValue(value)}
+    // />
+    <></>
   );
 };
 

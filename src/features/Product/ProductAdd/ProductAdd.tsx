@@ -54,11 +54,11 @@ function ProductAdd() {
             </Select>
           </FormControl>
         </Grid>
-        <Grid container justify="flex-end" className="my-20">
+        <Grid container justifyContent="flex-end" className="my-20">
           <Button color="primary">Add More</Button>
         </Grid>
         <br />
-        <Grid container item sm={12} md={12} justify="flex-end">
+        <Grid container item sm={12} md={12} justifyContent="flex-end">
           <Button variant="outlined" color="primary" className="mr-20">
             Cancel
           </Button>

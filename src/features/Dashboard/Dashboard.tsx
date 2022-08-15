@@ -77,7 +77,7 @@ function Dashboard() {
               <Grid container item xs={12}>
                 <h2>Products</h2>
               </Grid>
-              <Grid container justify="space-between">
+              <Grid container justifyContent="space-between">
                 <Grid item xs={12} sm={12} md={4}>
                   <TableContainer>
                     <Table aria-label="simple table">
@@ -100,7 +100,7 @@ function Dashboard() {
                     </Table>
                   </TableContainer>
                 </Grid>
-                <Grid container justify="center" item xs={12} sm={12} md={6}>
+                <Grid container justifyContent="center" item xs={12} sm={12} md={6}>
                   <div>
                     <FormControlLabel control={<Checkbox size="small" name="legend" color="primary" />} label="Legend" />
                     <br />
